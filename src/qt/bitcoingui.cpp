@@ -1081,7 +1081,7 @@ void BitcoinGUI::gotoinvestPage()
   setToolBarDefaultIcons();
   investAction->setIcon(QIcon(":/icons/investoverlay"));
   investAction->setChecked(true);
-  QDesktopServices::openUrl(QUrl("https://www.q8ecoin.com"));
+  QDesktopServices::openUrl(QUrl("https://q8ecoin.com"));
   exportAction->setEnabled(false);
   disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
@@ -1246,12 +1246,12 @@ void BitcoinGUI::changePassphrase()
 
 void BitcoinGUI::pioClicked()
 {
-    QDesktopServices::openUrl(QUrl("https://www.q8ecoin.com/"));
+    QDesktopServices::openUrl(QUrl("https://q8ecoin.com/"));
 }
 
 void BitcoinGUI::bitcointalkClicked()
 {
-    QDesktopServices::openUrl(QUrl("https://bitcointalk.org/index.php?topic=2737826"));
+    QDesktopServices::openUrl(QUrl("https://bitcointalk.org/index.php?topic=4474332"));
 }
 
 void BitcoinGUI::chainClicked()
