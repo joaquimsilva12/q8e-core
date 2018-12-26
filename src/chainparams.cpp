@@ -102,8 +102,9 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
         
-        vSeeds.push_back(CDNSSeedData("144.202.18.54", "144.202.18.54"));
         vSeeds.push_back(CDNSSeedData("185.239.239.199", "185.239.239.199"));
+        vSeeds.push_back(CDNSSeedData("67.169.210.168", "67.169.210.168"));
+        vSeeds.push_back(CDNSSeedData("193.37.213.87", "193.37.213.87"));
 
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
@@ -112,7 +113,7 @@ public:
         //strMasternodePaymentsPubKey = "046f78dcf911fbd61910136f7f0f8d90578f68d0b3ac973b5040fb7afb501b5939f39b108b0569dca71488f5bbf498d92e4d1194f6f941307ffd95f75e76869f0e";
         strDarksendPoolDummyAddress = "Qe49h5Wj57nnPcmSkjGAfscvTyW9UBRSDU";
         nLastPOWBlock = 50000;
-        nPOSStartBlock = 5001;
+        nPOSStartBlock = 201;
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
