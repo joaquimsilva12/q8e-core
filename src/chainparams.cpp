@@ -106,6 +106,9 @@ public:
         vSeeds.push_back(CDNSSeedData("45.63.42.157", "45.63.42.157"));
         vSeeds.push_back(CDNSSeedData("193.37.213.87", "193.37.213.87"));
         vSeeds.push_back(CDNSSeedData("172.68.174.59", "172.68.174.59"));
+        vSeeds.push_back(CDNSSeedData("24.202.193.229", "24.202.193.229"));
+        vSeeds.push_back(CDNSSeedData("5.189.129.172", "5.189.129.172"));
+        vSeeds.push_back(CDNSSeedData("87.27.50.195", "87.27.50.195"));
 
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
