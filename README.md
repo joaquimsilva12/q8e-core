@@ -15,3 +15,34 @@ Feature branches are created when there are major new features being worked on b
 From time to time a pull request will become outdated. If this occurs, and the pull is no longer automatically mergeable; a comment on the pull will be used to issue a warning of closure. The pull will be closed 15 days after the warning if action is not taken by the author. Pull requests closed in this manner will have their corresponding issue labeled 'stagnant'.
 
 Issues with no commits will be given a similar warning, and closed after 15 days from their last activity. Issues closed in this manner will be labeled 'stale'.
+
+
+q8e-qt: Qt5 GUI for Cheese
+===============================
+
+Build instructions
+===================
+
+Debian
+-------
+
+First, make sure that the required packages for Qt5 development of your
+distribution are installed, for Debian and Ubuntu these are:
+
+::
+
+    apt-get install qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools \
+        build-essential libboost-dev libboost-system-dev \
+        libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev \
+        libssl-dev libdb++-dev libminiupnpc-dev
+
+then execute the following:
+
+::
+
+    qmake
+    make
+
+Alternatively, install Qt Creator and open the `q8e-qt.pro` file.
+
+An executable named `q8e-qt` will be built.
