@@ -17,7 +17,7 @@ From time to time a pull request will become outdated. If this occurs, and the p
 Issues with no commits will be given a similar warning, and closed after 15 days from their last activity. Issues closed in this manner will be labeled 'stale'.
 
 
-q8e-qt: Qt5 GUI for Cheese
+q8e-qt: Qt5 GUI
 ===============================
 
 Build instructions
