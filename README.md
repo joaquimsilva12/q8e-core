@@ -46,3 +46,17 @@ then execute the following:
 Alternatively, install Qt Creator and open the `q8e-qt.pro` file.
 
 An executable named `q8e-qt` will be built.
+
+Debian daemon
+-------
+::
+
+    apt-get update
+    apt-get install git automake build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev software-properties-common libgmp-dev unzip -y
+    
+    add-apt-repository ppa:bitcoin/bitcoin
+    apt-get update
+    apt-get install libdb4.8-dev libdb4.8++-dev libminiupnpc-dev
+    
+    make -f makefile.unix
+    
